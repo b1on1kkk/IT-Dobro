@@ -8,9 +8,9 @@ export default function InnerPageLinks() {
       {INNER_MENU_LINKS.map((links, idx) => {
         return (
           <Link href={links.link} key={idx} scroll={true}>
-            <div className="px-14 py-5 rounded-3xl bg-main_green font-semibold hover:bg-green-600 hover:text-white transition-all duration-200 ease-in">
+            <button className="px-14 py-5 rounded-3xl bg-main_green font-semibold hover:bg-green-600 hover:text-white transition-all duration-200 ease-in cursor-pointer">
               {links.text}
-            </div>
+            </button>
           </Link>
         );
       })}
